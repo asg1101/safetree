@@ -6,7 +6,7 @@ async function login (userName, password) {
 	if (!userName) {
 		throw new Error("用户名不得为空");
 	}
-	password = password || "123456";
+	password = password || "esx123456";
 	const info = await speciallogin(userName, password);
 	if (info.baseurl.includes(location.host)) {
 		if (location.pathname !== "/MainPage.html") {
